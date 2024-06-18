@@ -1,16 +1,60 @@
 .navbar {
     height: 100px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
+
 
     .left {
-        flex: 1;
+        flex: 2;
+        display: flex;
+        gap: 35px;
+
+        .logo {
+            display: flex;
+            gap: 5px;
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
     }
 
     .right {
         flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+
+        .usr {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+        }
+
+        button {
+            width: 90px;
+            height: 30px;
+            background-color: #c86bfa;
+            color: #FFFFFF;
+            border: none;
+        }
+    }
+
+    span {
+        cursor: pointer;
+        transition: font-size 2s;
+    }
+
+    span:hover {
+        scale: 1.2;
     }
 }

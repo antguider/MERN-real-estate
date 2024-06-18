@@ -3,3 +3,30 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+@media (max-width: 1366px) { 
+    .layout {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) { 
+    .layout {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 738px) {
+    .layout {
+        max-width: 640px;
+    }
+}
+
+
+
+.layout {
+    margin: 0px 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
