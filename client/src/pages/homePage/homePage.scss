@@ -1,0 +1,92 @@
+.home-page {
+    display: flex;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 70vh;
+        flex: 3;
+
+        .search {
+            display: flex;
+            flex-direction: column;
+
+            .active {
+                color: #FFFFFF;
+                background-color: #c8b6ff;
+            }
+
+            button {
+                color: #000000;
+                height: 40px;
+                width: 120px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .group-txtbox {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 52px;
+
+                border: 1px solid #3d405b;
+
+                input {
+                    border: none;
+                    height: 50px;
+                    padding-left: 5px;
+                }
+
+                input:focus {
+                    outline: 1px solid #5e548e;
+                }
+
+                .search-btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #fca311;
+                    border: 1px solid #3d405b;
+                    height: 100%;
+                    width: 100%;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+
+        .award {
+            display: flex;
+            justify-content: space-between;
+
+            .list {
+                display: flex;
+                flex-direction: column;
+
+                .title {
+                    font-size: xx-large;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .right {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+
+        .random-image {
+            background-image: url("./architecture.jpg");
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+}
