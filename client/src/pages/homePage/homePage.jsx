@@ -1,3 +1,4 @@
+import SearchBar from '../../components/searchbar/Searchbar';
 import './homePage.scss';
 
 const HomePage = () => {
@@ -16,20 +17,7 @@ const HomePage = () => {
                     Sign up now to save your favorite properties and receive alerts.
                     Your dream home is just a few clicks away!
                 </p>
-                <div className="search">
-                    <div className="btn-group">
-                        <button className='active'>Buy</button>
-                        <button>Rent</button>
-                    </div>
-                    <div className="group-txtbox">
-                        <input type="text" name="" id="" placeholder='City Location' />
-                        <input type="number" name="" id="" placeholder='Min Price' />
-                        <input type="number" name="" id="" placeholder='Max Price' />
-                        <div className="search-btn">
-                            <img src="./search.png" alt="search" />
-                        </div>
-                    </div>
-                </div>
+                <SearchBar/>
                 <div className="award">
                     <div className="list">
                         <span className="title">
