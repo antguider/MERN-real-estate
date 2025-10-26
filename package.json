@@ -1,0 +1,67 @@
+{
+  "name": "MERN Real Estate - Enterprise Edition",
+  "version": "1.0.0",
+  "description": "A comprehensive real estate platform built with MERN stack, featuring advanced search, user management, property listings, and enterprise-grade security.",
+  "main": "api/app.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:client\"",
+    "dev:api": "cd api && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "npm run build:api && npm run build:client",
+    "build:api": "cd api && npm run build",
+    "build:client": "cd client && npm run build",
+    "start": "cd api && npm start",
+    "test": "npm run test:api && npm run test:client",
+    "test:api": "cd api && npm run test:ci",
+    "test:client": "cd client && npm run test:coverage",
+    "lint": "npm run lint:api && npm run lint:client",
+    "lint:api": "cd api && npm run lint",
+    "lint:client": "cd client && npm run lint",
+    "lint:fix": "npm run lint:fix:api && npm run lint:fix:client",
+    "lint:fix:api": "cd api && npm run lint:fix",
+    "lint:fix:client": "cd client && npm run lint:fix",
+    "format": "npm run format:api && npm run format:client",
+    "format:api": "cd api && npm run format",
+    "format:client": "cd client && npm run format",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "db:generate": "cd api && npm run db:generate",
+    "db:push": "cd api && npm run db:push",
+    "db:migrate": "cd api && npm run db:migrate",
+    "db:seed": "cd api && npm run db:seed",
+    "setup": "npm install && cd api && npm install && cd ../client && npm install",
+    "clean": "rm -rf node_modules api/node_modules client/node_modules",
+    "postinstall": "npm run db:generate"
+  },
+  "keywords": [
+    "real-estate",
+    "mern",
+    "react",
+    "nodejs",
+    "mongodb",
+    "express",
+    "prisma",
+    "enterprise",
+    "property-management",
+    "real-estate-platform"
+  ],
+  "author": "Your Company",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/MERN-real-estate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/MERN-real-estate/issues"
+  },
+  "homepage": "https://github.com/your-username/MERN-real-estate#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
